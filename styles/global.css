@@ -1,0 +1,261 @@
+/* global typography */
+body
+{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  color: var(--font-color-primary);
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-body);
+  line-height: 1.5; /* Do not modify. This is a requirement of WCAG 1.4.8. */
+}
+
+h1,
+.h1
+{
+  margin-bottom: 20px;
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-regular);
+}
+
+/* global focus styling */
+:focus:not([disabled]),
+button:focus:not([disabled])
+{
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(183, 207, 250); /* use $cornflower variable with Sass */
+}
+
+/* grid overrides */
+.container,
+.container-fluid
+{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.row
+{
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.col,
+[class^="col-"]
+{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* page layout */
+.app-wrapper
+{
+  flex: 1;
+}
+
+.page-header
+{
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color-primary);
+  padding: 25px 20px;
+  background: var(--cloud);
+}
+
+/* form elements */
+fieldset
+{
+  margin-bottom: 20px;
+}
+
+legend
+{
+  margin-bottom: 20px;
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.question-number,
+.requirement-indicator
+{
+  display: block;
+  color: var(--font-color-secondary);
+  font-size: var(--font-size-body);
+}
+
+.question-number
+{
+  margin-bottom: 5px;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.requirement-indicator
+{
+  margin-top: 5px;
+  font-weight: var(--font-weight-regular);
+  font-style: italic;
+}
+
+.form-group
+{
+  margin-bottom: 20px;
+}
+
+label
+{
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* form controls & custom selects */
+.form-control,
+.custom-select
+{
+  height: 30px;
+  border-radius: 0;
+  border: 1px solid var(--border-color-primary);
+  padding: 5px 10px;
+  color: var(--font-color-primary);
+  font-size: var(--font-size-body);
+}
+
+.form-control::placeholder,
+.custom-select::placeholder
+{
+  color: var(--font-color-secondary);
+  opacity: 1;
+}
+
+.form-control:focus,
+.custom-select:focus
+{
+  border-color: var(--border-color-primary);
+  color: var(--font-color-primary);
+  opacity: 1;
+}
+
+.form-control:disabled,
+.custom-select:disabled,
+.form-control[readonly],
+.custom-select[readonly]
+{
+  border-color: rgba(var(--border-color-primary), 0.5);
+  background: var(--coconut);
+  color: var(--font-color-secondary);
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+.form-control:disabled::placeholder,
+.custom-select:disabled::placeholder,
+.form-control[readonly]::placeholder,
+.custom-select[readonly]::placeholder
+{
+  color: var(--font-color-secondary);
+  opacity: 1;
+}
+
+.form-control[readonly]:focus,
+.custom-select[readonly]:focus
+{
+  box-shadow: var(--box-shadow-focus-readonly);
+}
+
+.custom-select
+{
+  background: url(https://static.thenounproject.com/png/1920957-200.png) no-repeat right 10px center/8px 8px;
+}
+
+/* checkboxes & radio buttons */
+.custom-control
+{
+  height: 16px;
+  margin-bottom: 10px;
+}
+
+.custom-control-label::before
+{
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-color: var(--border-color-primary);
+}
+
+.custom-control-input:checked ~ .custom-control-label::before,
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before
+{
+  border-color: var(--accent-color-primary);
+  background-color: var(--accent-color-primary);
+  color: var(--coconut);
+}
+
+.custom-control-input:focus ~ .custom-control-label::before,
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before
+{
+  box-shadow: var(--box-shadow-focus-default);
+}
+
+.custom-control-input:focus ~ .custom-control-label::before
+{
+  border-color: var(--accent-color-primary);
+}
+
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before
+{
+  border-color: var(--border-color-primary);
+}
+
+.custom-control-label::after
+{
+  top: 0;
+}
+
+/* checkboxes */
+.custom-checkbox .custom-control-label::before
+{
+  border-radius: 0;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after
+{
+  background: none;
+  content: var(--icon-check);
+  top: -3px;
+  font-family: var(--font-family-icon);
+  font-weight: var(--font-weight-semi-bold);
+  color: var(--coconut);
+  font-size: 1rem;
+  -webkit-transform: scale(.75);
+  transform: scale(.75);
+}
+
+/* buttons */
+.btn
+{
+  border-radius: 0;
+  border-color: transparent;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-lg
+{
+  min-width: 150px;
+  border-radius: 0;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-primary
+{
+  background: var(--accent-color-primary);
+  color: var(--coconut);
+}
+
+.btn-primary:hover
+{
+  border-color: transparent;
+  background: var(--accent-color-primary-hover);
+  color: var(--coconut);
+}

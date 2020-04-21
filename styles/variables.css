@@ -1,0 +1,93 @@
+body
+{
+  /*
+    color palette
+  */
+
+  /* primary colors */
+  --apricot: #FDA94E;
+  --ultramarine: #0F5EF0;
+  --midnight: #221F4D;
+  --coconut: #FFFFFF;
+
+  /* secondary blues */
+  --cobalt: #0B42A8;
+  --blueberry: #0C4BC0;
+  --cornflower: #B7CFFA;
+  --ice: #E7EFFD;
+
+  /* secondary greys */
+  --storm: #516F90;
+  --haze: #CBD6E2;
+  --mist: #EAF0F6;
+  --cloud: #F5F8FA;
+
+  /* tertiary colors */
+  --shamrock: #05AE77;
+  --clementine: #FF7B00;
+  --tomato: #CF171A;
+  --brick: #A11214;
+
+
+  /*
+    abstracted utility variables
+  */
+
+  /* font families */
+  --font-family-default: 'Open Sans', sans-serif;
+  --font-family-icon: 'Font Awesome 5 Free'; /* only used for CSS pseudo elements */
+
+  /* font sizes */
+  --font-size-h1: 22px;
+  --font-size-h2: 15px;
+  --font-size-h3: 12px;
+  --font-size-body: 12px;
+  --font-size-small: 10px;
+  --font-size-display1: var(--font-size-h1);
+  --font-size-display2: var(--font-size-h2);
+  --font-size-display3: var(--font-size-h3);
+  --font-size-display4: var(--font-size-h4);
+  --font-size-display5: var(--font-size-h5);
+
+  /* font weights */
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  /* font colors */
+  --font-color-primary: var(--midnight);
+  --font-color-secondary: var(--storm);
+  --font-color-success: var(--shamrock);
+  --font-color-warning: var(--tomato);
+
+  /* accent colors */
+  --accent-color-primary: var(--ultramarine);
+  --accent-color-primary-hover: var(--blueberry);
+  --accent-color-secondary: var(--apricot);
+
+  /* link colors */
+  --link-color-primary: var(--ultramarine);
+
+  /* border colors */
+  --border-color-primary: var(--storm);
+  --border-color-secondary: var(--haze);
+
+  /* feedback colors */
+  --feedback-color-success: var(--shamrock);
+  --feedback-color-alert: var(--clementine);
+  --feedback-color-warning: var(--tomato);
+  --feedback-color-warning-hover: var(--brick);
+
+  /* shadows */
+  --box-shadow-primary-nav: 0 0 7px 0 rgba(11, 66, 168, 0.2);
+  --box-shadow-focus-default: 0 0 0 0.2rem rgba(183, 207, 250, 1);
+  --box-shadow-focus-warning: 0 0 0 0.2rem rgba(207, 23, 26, 0.25);
+  --box-shadow-focus-readonly: 0 0 0 0.2rem rgba(81, 111, 144, 0.3);
+
+  /* icons */
+  --icon-menu: "\f0c9";
+  --icon-close: "\f00d";
+  --icon-chevron-right: "\f054";
+  --icon-chevron-down: "\f078";
+  --icon-check: "\f00c";
+}

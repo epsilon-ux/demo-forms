@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- web + icon fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- custom css + bootstrap overrides -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/global.css">
+
+    <title>Demo Form</title>
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <div class="container-fluid page-header">
+          <div class="row">
+            <div class="col">
+              <h1 class="h1 mb-0">Form Demo</h1>
+            </div>
+          </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row justify-content-between">
+          <div class="col">
+            <h2 class="h1">Ice Cream Survey</h2>
+          </div>
+        </div>
+        <form>
+          <div class="row">
+            <div class="col-md-6 col-xl-4">
+              <fieldset>
+                <legend>
+                  <span class="question-number">Question 1 of 5</span>
+                  Do you like ice cream?
+                  <span class="requirement-indicator">(Optional)</span>
+                </legend>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="q1opt1" class="custom-control-input" name="preference" value="yes" checked />
+                    <label for="q1opt1" class="custom-control-label">Yes</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="q1opt2" class="custom-control-input" name="preference" value="no" />
+                    <label for="q1opt2" class="custom-control-label">No</label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-xl-4">
+              <fieldset>
+                <legend>
+                  <span class="question-number">Question 2 of 5</span>
+                  Select your favorite flavor(s) of ice cream
+                  <span class="requirement-indicator">(Optional)</span>
+                </legend>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" id="q2opt1" class="custom-control-input" />
+                    <label for="q2opt1" class="custom-control-label">Cookies & Cream</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" id="q2opt2" class="custom-control-input" />
+                    <label for="q2opt2" class="custom-control-label">Mint Chip</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" id="q2opt3" class="custom-control-input" />
+                    <label for="q2opt3" class="custom-control-label">Mocha Chip</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" id="q2opt4" class="custom-control-input" />
+                    <label for="q2opt4" class="custom-control-label">Pistachio</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" id="q2opt5" class="custom-control-input" />
+                    <label for="q2opt5" class="custom-control-label">Salted Caramel</label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-xl-4">
+              <fieldset>
+                <legend>
+                  <span class="question-number">Question 3 of 5</span>
+                  If you could invent a new flavor of ice cream, what flavor would you invent?
+                  <span class="requirement-indicator">(Optional)</span>
+                </legend>
+                <div class="form-group">
+                  <label for="q3">Answer</label>
+                  <input type="text" id="q3" class="form-control" placeholder="I would invent spicy mango ice cream."/>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-xl-4">
+              <fieldset>
+                <legend>
+                  <span class="question-number">Question 4 of 5</span>
+                  Select your favorite brand of ice cream
+                  <span class="requirement-indicator">(Optional)</span>
+                </legend>
+                <div class="form-group">
+                    <label for="q4">Answer</label>
+                    <select id="q4" class="custom-select">
+                      <option value="" selected disabled>Select a brand</option>
+                      <option value="benAndJerrys">Ben & Jerry's</option>
+                      <option value="breyers">Breyers</option>
+                      <option value="edys">Edy's</option>
+                      <option value="haagenDazs">Häagen-Dazs</option>
+                      <option value="nestle">Nestlé</option>
+                      <option value="talenti">Talenti</option>
+                    </select>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <fieldset>
+                <legend>
+                  <span class="question-number">Question 5 of 5</span>
+                  Tell us why the brand you selected is your favorite
+                  <span class="requirement-indicator">(Optional)</span>
+                </legend>
+                <div class="form-group">
+                  <label for="q5">Answer</label>
+                  <textarea id="q5" class="form-control" placeholder="My favorite brand is Ben & Jerry's because I like their selection of flavors, price, and availability. I also like their merchandise." rows="5"></textarea>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary btn-lg mb-4">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
